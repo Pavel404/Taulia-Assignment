@@ -1,0 +1,5 @@
+{"properties": [{
+  "name": "is.test",
+  "type": "java.lang.String",
+  "description": "Value which is used to determine if FileService is used by a unit test"
+}]}
