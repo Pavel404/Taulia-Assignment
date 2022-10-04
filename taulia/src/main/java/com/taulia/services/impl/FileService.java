@@ -53,7 +53,7 @@ public class FileService implements com.taulia.services.FileService {
 			List<String> values = null;
 			String line = null;
 			String buyerName = null;
-			//read and write line immediately
+			//read and write when buffer is full
 			while((line = reader.readLine()) != null) {
 			  values = Arrays.asList(line.split(","));
 			  buyerName = values.get(Constants.BUYER_NAME_POSITION);
@@ -85,7 +85,7 @@ public class FileService implements com.taulia.services.FileService {
 			List<String> values = null;
 			String line = null;
 			String buyerName = null;
-			//read and write line immediately
+			//read and write when buffer is full
 			while((line = reader.readLine()) != null) {
 			  values = Arrays.asList(line.split(","));
 			  buyerName = values.get(Constants.BUYER_NAME_POSITION);
